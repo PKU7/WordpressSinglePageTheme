@@ -7,6 +7,22 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     </head>
     <body>
+        <div class="container">
+          <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted">WordPress Single Page Sample</h3>
+        <nav>
+          <ul class="nav nav-justified">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
          <div id="main">
              <div id="home">
              <?php $recent = new WP_Query("pagename=home"); while($recent->have_posts()) : $recent->the_post();?>
@@ -38,7 +54,7 @@
 
 
 
-
+             </div>
         </div>       
     </body>
 </html>

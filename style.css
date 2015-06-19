@@ -13,3 +13,8 @@ This theme, is licensed under a MIT license.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
+@import url("justified-nav.css");
+h1{
+    font-size: 5em;
+   
+}
