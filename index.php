@@ -9,7 +9,7 @@
     <body>
          <div id="main">
              <div id="home">
-             <?php $recent = new WP_Query("page_id=8"); while($recent->have_posts()) : $recent->the_post();?>
+             <?php $recent = new WP_Query("pagename=home"); while($recent->have_posts()) : $recent->the_post();?>
                 <?php the_content(); ?>
                <?php endwhile; ?>
              </div>
@@ -22,14 +22,14 @@
 		       <hr> <?php endwhile;endif?>
 		    </div>
              <div id="about">
-             <?php $recent = new WP_Query("page_id=12"); while($recent->have_posts()) : $recent->the_post();?>
+             <?php $recent = new WP_Query("pagename=about"); while($recent->have_posts()) : $recent->the_post();?>
                  <h1><?php the_title(); ?></h1>
                 <?php the_content(); ?>
                <?php endwhile; ?>
              </div>
              <hr />
              <div id="contact">
-             <?php $recent = new WP_Query("page_id=10"); while($recent->have_posts()) : $recent->the_post();?>
+             <?php $recent = new WP_Query("pagename=contact"); while($recent->have_posts()) : $recent->the_post();?>
                  <h1><?php the_title(); ?></h1>
                 <?php the_content(); ?>
                <?php endwhile; ?>
